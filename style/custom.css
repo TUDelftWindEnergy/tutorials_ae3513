@@ -11,6 +11,127 @@
   order: -1; /* Move it visually below the date */
 }
 
+/* Accent colour */
+:root {
+  --accent: #017188;
+  --accent-light: #e6f2f4;
+  --myst-color-active: #017188;
+  --myst-color-active-bg: #e6f2f4;
+  --myst-color-link: #017188;
+  --myst-color-link-hover: #01505f;
+  --myst-color-focus-ring: #017188;
+  --myst-color-link-underline: #017188;
+  --code-bar: #F1BE3E;
+}
+
+.dark {
+  --code-bar: #F7D27A;
+  --myst-color-link-underline: #4fc3d9;
+  --myst-color-active: #4fc3d9;
+  --myst-color-active-bg: rgba(79, 195, 217, 0.18);
+  --myst-color-link: #4fc3d9;
+  --myst-color-link-hover: #8fdbe9;
+  --myst-color-focus-ring: #4fc3d9;
+}
+
+/* Code cell bar */
+.article .myst-code.border-l-4,
+.article .myst-code {
+  border-left-color: var(--code-bar);
+}
+
+/* Sidebar (table of contents) */
+.myst-toc-item {
+  border-left: 4px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.myst-toc-item:hover {
+  background-color: var(--myst-color-active-bg);
+  border-left-color: var(--myst-color-active);
+  color: var(--myst-color-active);
+}
+
+.myst-toc-item.active,
+.myst-toc-item-exact {
+  background-color: var(--accent);
+  border-left-color: var(--accent);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.myst-toc-item.active a,
+.myst-toc-item-exact a {
+  color: #ffffff;
+}
+
+.dark .myst-toc-item.active,
+.dark .myst-toc-item-exact {
+  background-color: #017188;
+  border-left-color: #4fc3d9;
+}
+
+.article h1,
+.article h2,
+.article h3,
+.article h4 {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.article h1 {
+  border-bottom: 4px solid var(--accent);
+  padding-bottom: 0.3rem;
+}
+
+.article h2 {
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.2rem;
+}
+
+.dark .article h1,
+.dark .article h2,
+.dark .article h3,
+.dark .article h4 {
+  color: #4fc3d9;
+}
+
+.dark .article h1,
+.dark .article h2 {
+  border-bottom-color: #4fc3d9;
+}
+
+/* Links */
+.article a {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+/* Tutorial cards: accent top bar, rounded corners, stronger hover */
+.myst-card,
+article .card {
+  border-radius: 0.5rem;
+  border-top: 4px solid var(--accent);
+  transition: box-shadow 0.15s ease, background-color 0.15s ease;
+}
+
+.myst-card:hover,
+article .card:hover {
+  background-color: var(--accent-light);
+  box-shadow: 0 4px 14px rgba(1, 113, 136, 0.35);
+}
+
+.dark .myst-card:hover,
+.dark article .card:hover {
+  background-color: rgba(1, 113, 136, 0.25);
+}
+
+/* Figures in notebooks: no overflow */
+.article img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 /* footer part */
 /*
@@ -46,7 +167,7 @@ body {
    * style rules.
    */
   flex-shrink: 0;
-  background: #0C2340;
+  background: #017188;
   color: white;
   padding-left: 2rem;
   padding-right: 2rem;

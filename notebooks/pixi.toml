@@ -1,0 +1,20 @@
+[workspace]
+authors = ["Jenna Iori <j.iori@tudelft.nl>"]
+channels = ["conda-forge"]
+name = "tutorials_ae3513_notebooks"
+platforms = ["win-64", "osx-64", "osx-arm64", "linux-64"]
+version = "0.1.0"
+
+[tasks]
+editor = "jupyter lab"
+
+[dependencies]
+jupyterlab = ">=4.6.3,<5"
+numpy = ">=2.5.2,<3"
+matplotlib = ">=3.11.1,<4"
+scipy = ">=1.18.0,<2"
+ipywidgets = ">=8.1.9,<9"
+floris = ">=4.6.6,<5"
+
+[pypi-dependencies]
+py-wake = ">=2.6.20, <3"

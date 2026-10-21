@@ -10,3 +10,5 @@ jupyterlab
 floris
 
 anywidget
+
+py_wake

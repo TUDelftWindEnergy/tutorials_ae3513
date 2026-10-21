@@ -3,25 +3,14 @@ version: 1
 project:
   title: Tutorials AE3513
   # description:
-  keywords: [Jupyter Book, Open Science, TU Delft, Starterkit]
+  keywords: [Wind energy, Python, Tutorials, TU Delft, AE3513]
 
-  github: https://github.com/jennaiori/tutorials_ae3513 # change this to your own repository
+  github: https://github.com/jennaiori/tutorials_ae3513
   date: 2026-09-22
   thumbnail: style/thumbnail.jpg
   numbering: 
     title: false
   # specify authors in authors.yml file
-
-  # used to load /reuse materials from other repositories
-  references:
-    myst-guide: https://mystmd.org/guide
-    JB-workshop: https://jupyter-book.github.io/workshop-template/
-    
-  # the following chapters are excluded from building the pdf version
-  exclude: 
-    - errorlog.md 
-    - README.md
-    - content/Cheatsheet.md
 
   # include a bibliography file for references in the project  
   bibliography:
@@ -32,17 +21,13 @@ project:
     binder:
       repo: https://github.com/jennaiori/tutorials_ae3513
   plugins:
-    - https://github.com/jupyter-book/myst-plugins/releases/download/iframe-to-qr-pdf/iframe-to-qr-pdf.mjs\
     - plugins/page-last-updated.mjs
-    - plugins/typst_conversion-support.mjs
     - plugins/lightbox.mjs
     - https://github.com/choldgraf/myst-iconify/releases/latest/download/index.mjs
 
 extends:
   - toc.yml             # includes table of contents
-  - export typst.yml    # includes export configurations
   - authors.yml         # includes author and contributor information
-  - options.yml         # includes project-specific options and metadata
   
 site:
   template: book-theme
@@ -52,14 +37,6 @@ site:
     favicon:      style/favicon.ico
     logo:         style/tudelft.png
     logo_dark:    style/tudelft-dark.png
-    logo_url:     https://jboss.tudelft.nl
+    logo_url:     https://www.tudelft.nl
     hide_authors: true
     style:        style/custom.css
-  
-
-  # custom parts
-  parts:
-    # footer:       style/footer.md
-    # banner:       Visit our new website at [https://jboss.tudelft.nl](https://jboss.tudelft.nl) for the latest updates and resources! See also our newest [Typst template](https://github.com/TUD-JB-OS/typst_template.git) version
-    # navbar_end:   style/navbar_end.md
-# 

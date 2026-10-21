@@ -81,10 +81,6 @@ const updateDateTransform = {
   plugin: () => {
     return (node, file) => {
       if (!file?.path) return node;
-      
-      // Return if PDF export
-      const isPDF = process.argv.some(arg => arg.includes("pdf") || arg.includes("typst"));
-      if (isPDF) return node; 
 
       // Return if frontmatter has no-update-date: true
       const frontmatter = getFrontmatter(file.path);

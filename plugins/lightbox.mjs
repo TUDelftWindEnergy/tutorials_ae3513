@@ -53,6 +53,17 @@ const injectWidgetTransform = {
       utils.selectAll('image', tree).length > 0 ||
       utils.selectAll('container[kind="figure"]', tree).length > 0;
     if (!hasImages) return;
+    // Drop a widget injected on a previous run (e.g. from a cached tree), whose
+    // esm path has already been rewritten and can no longer be resolved.
+    tree.children = tree.children.filter(
+      (node) =>
+        !(
+          node.type === 'block' &&
+          node.children?.length === 1 &&
+          node.children[0].type === 'anywidget' &&
+          /lightbox/.test(String(node.children[0].esm))
+        ),
+    );
     // Wrap in a `block` because thebe execution seems to assume that everything
     // is a block-level item
     tree.children.push({
