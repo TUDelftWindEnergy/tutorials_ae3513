@@ -13,8 +13,8 @@ Interactive tutorials for the course **AE3513 Integration Assignment** at Delft 
 
 The course is part of the [Offshore Wind Energy minor](https://www.tudelft.nl/lr/studeren/minoren/offshore-wind-energy-minor), taught at the Faculty of Aerospace Engineering of TU Delft.
 
-:::{caution} In construction
-This website is still in beta version. If you find an error or something unclear, please [raise an issue on GitHub](https://github.com/jennaiori/tutorials_ae3513/issues/new).
+:::{caution} Website in beta version
+If you find an error in the website, the notebooks, or something is unclear, please [raise an issue on GitHub](https://github.com/jennaiori/tutorials_ae3513/issues/new).
 :::
 
 ## Tutorials

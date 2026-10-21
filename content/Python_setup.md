@@ -62,6 +62,7 @@ It should print a version number. See the [pixi documentation](https://pixi.sh) 
 The notebooks are in the [notebooks](https://github.com/jennaiori/tutorials_ae3513/tree/main/notebooks) folder of the repository. GitHub cannot download a single folder as a ZIP file, so use the [download-directory](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fjennaiori%2Ftutorials_ae3513%2Ftree%2Fmain%2Fnotebooks) tool, which creates a ZIP file of the folder. Unzip it and move the resulting `notebooks` folder somewhere you will keep your work, for example `Documents`.
 
 ### Step 3: Install the packages
+Open a terminal from the  `notebooks` folder (the folder that contains `pixi.toml`) and type:
 
 ```
 pixi install
@@ -71,7 +72,7 @@ The first time, pixi downloads Python and all the packages. This can take severa
 
 ## Part 2: Running the tutorials (every time)
 
-1. Open a terminal in the `notebooks` folder (the folder that contains `pixi.toml`). On Windows, open the folder in File Explorer, type `cmd` in the address bar and press Enter; on macOS, right-click the folder and choose **New Terminal at Folder**. Alternatively, use `cd` to move to the folder in the terminal.
+1. Open a terminal in the `notebooks` folder (the folder that contains `pixi.toml`).
 2. Start JupyterLab:
 
    ```
@@ -79,6 +80,7 @@ The first time, pixi downloads Python and all the packages. This can take severa
    ```
 
 3. JupyterLab opens in your browser. Double-click a tutorial in the file browser on the left, for example `Tuto_floris.ipynb`.
+4. Run code cells by pressing **Shift+Enter** or click the ▶ button in the toolbar.  Cells should be run from top to bottom.
 4. When you are done, save your work, close the browser tab, and press **Ctrl+C** in the terminal.
 
 ## Working with a notebook
@@ -100,6 +102,8 @@ A notebook is made of **cells**, which contain either text or code.
 | `pixi` says it cannot find a `pixi.toml` or workspace     | You are in the wrong folder. Open the terminal in the folder that directly contains `pixi.toml` (see Step 2).                                                                                                     |
 | A tutorial shows `ModuleNotFoundError`                    | You started JupyterLab in another way. Close it and start it with `pixi run editor` from the `notebooks` folder.                                                                                                  |
 
+
 ## Acknowledgements
+
 
 This page is adapted from the [Installing Python](https://www.modelling-energy-systems.org/stable/appendix/installing-python.html) appendix of the TU Delft course *Modelling energy systems* by Stefan Pfenninger and contributors.
