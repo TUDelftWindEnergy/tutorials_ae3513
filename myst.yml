@@ -5,7 +5,7 @@ project:
   # description:
   keywords: [Wind energy, Python, Tutorials, TU Delft, AE3513]
 
-  github: https://github.com/jennaiori/tutorials_ae3513
+  github: https://github.com/tudelftwindenergy/tutorials_ae3513
   date: 2026-09-22
   thumbnail: style/thumbnail.jpg
   numbering: 
@@ -19,7 +19,7 @@ project:
   # setup for interactivity with Thebe and Binder
   jupyter:
     binder:
-      repo: https://github.com/jennaiori/tutorials_ae3513
+      repo: https://github.com/tudelftwindenergy/tutorials_ae3513
   plugins:
     - plugins/page-last-updated.mjs
     - plugins/lightbox.mjs

@@ -14,7 +14,7 @@ Interactive tutorials for the course **AE3513 Integration Assignment** at Delft 
 The course is part of the [Offshore Wind Energy minor](https://www.tudelft.nl/lr/studeren/minoren/offshore-wind-energy-minor), taught at the Faculty of Aerospace Engineering of TU Delft.
 
 :::{caution} Website in beta version
-If you find an error in the website, the notebooks, or something is unclear, please [raise an issue on GitHub](https://github.com/jennaiori/tutorials_ae3513/issues/new).
+If you find an error in the website, the notebooks, or something is unclear, please [raise an issue on GitHub](https://github.com/tudelftwindenergy/tutorials_ae3513/issues/new).
 :::
 
 ## Tutorials
@@ -50,7 +50,7 @@ Compute the dispatch of a storage system that provides a minimum baseload power.
 - **Quick start:** open a tutorial and click the ![](figures/on.png) icon at the top right to run it online. No installation is needed, but starting can take a few minutes.
 - **On your computer:** follow the [Python setup](Python_setup.md) instructions. If you are new to Python, start with the [Programming with Python](https://swcarpentry.github.io/python-novice-gapminder/) course.
 
-The notebooks are available at [github.com/jennaiori/tutorials_ae3513](https://github.com/jennaiori/tutorials_ae3513/tree/main/notebooks).
+The notebooks are available at [github.com/tudelftwindenergy/tutorials_ae3513](https://github.com/tudelftwindenergy/tutorials_ae3513/tree/main/notebooks).
 
 ## Credits
 

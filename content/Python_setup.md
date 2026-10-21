@@ -59,7 +59,7 @@ It should print a version number. See the [pixi documentation](https://pixi.sh) 
 
 ### Step 2: Download the notebooks folder
 
-The notebooks are in the [notebooks](https://github.com/jennaiori/tutorials_ae3513/tree/main/notebooks) folder of the repository. GitHub cannot download a single folder as a ZIP file, so use the [download-directory](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fjennaiori%2Ftutorials_ae3513%2Ftree%2Fmain%2Fnotebooks) tool, which creates a ZIP file of the folder. Unzip it and move the resulting `notebooks` folder somewhere you will keep your work, for example `Documents`.
+The notebooks are in the [notebooks](https://github.com/tudelftwindenergy/tutorials_ae3513/tree/main/notebooks) folder of the repository. GitHub cannot download a single folder as a ZIP file, so use the [download-directory](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Ftudelftwindenergy%2Ftutorials_ae3513%2Ftree%2Fmain%2Fnotebooks) tool, which creates a ZIP file of the folder. Unzip it and move the resulting `notebooks` folder somewhere you will keep your work, for example `Documents`.
 
 ### Step 3: Install the packages
 Open a terminal from the  `notebooks` folder (the folder that contains `pixi.toml`) and type:
