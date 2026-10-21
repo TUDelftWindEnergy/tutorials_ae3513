@@ -2,16 +2,14 @@ version: 1
 project:
   toc:
     - file: content/Index.md
-    - file: content/Quickstart.md
-      children:
-        - file: content/firststeps.md
-    - file: content/Introduction.md
-    - file: content/Theory.md
-    - file: content/Methods.md
-    - file: content/Results.ipynb
-    - file: content/Conclusion.md
-    - title: Appendix
-      children:
-        - file: content/Cheatsheet.md
-        - file: errorlog.md
-        - file: README.md
+    - file: content/Python_setup.md
+    - file: content/Tuto_pywake.ipynb
+    - file: content/Tuto_floris.ipynb
+    - file: content/Tuto_awes.ipynb
+    - file: content/Tuto_storage.ipynb
+    # - file: content/Conclusion.md
+    # - title: Appendix
+    #   children:
+    #     - file: content/Cheatsheet.md
+    #     - file: errorlog.md
+    #     - file: README.md

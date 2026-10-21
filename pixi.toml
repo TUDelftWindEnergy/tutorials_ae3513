@@ -1,7 +1,7 @@
 [workspace]
-authors = ["FreekPols <c.f.j.pols@tudelft.nl>"]
+authors = ["Jenna Iori <j.iori@tudelft.nl>"]
 channels = ["conda-forge"]
-name = "starterkit"
+name = "tutorials_ae3513"
 platforms = ["win-64","osx-64", "osx-arm64","linux-64"]
 version = "0.1.0"
 
@@ -20,6 +20,8 @@ ipywidgets = ">=8.1.9,<9"
 typst = ">=0.15.1,<0.16"
 jupytext = ">=1.19.5,<2"
 nodejs = "24.*"
+floris = ">=4.6.6,<5"
+anywidget = ">=0.11.0,<0.12"
 
 [pypi-dependencies]
 jupyterlab-myst = ">=2.7.0, <3"

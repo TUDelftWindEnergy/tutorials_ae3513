@@ -1,0 +1,16 @@
+name: mybook
+channels:
+- conda-forge
+dependencies:
+  - numpy
+  - scipy
+  - tqdm
+  - pandas
+  - matplotlib
+  - ipywidgets
+  - ipympl
+  - ipyleaflet
+  - jupyterlab
+  - floris
+
+  - anywidget

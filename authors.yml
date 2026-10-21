@@ -2,24 +2,24 @@ version: 1
 project:
   
   authors:
-    - id: student
-      name: student without a name yet
+    - id: lecturer
+      name: Jenna Iori
       affiliations:
         - tud
 
-  contributors:
-    - id: supervisor-1
-      name: prof. dr. John Doe
-      affiliations:
-        - tud
-    - id: committee-1
-      name: Prof. Dr. C. Examiner
-      affiliations:
-        - tud
-    - id: committee-2
-      name: Dr. D. Examiner
-      affiliations:
-        - tud
+  # contributors:
+  #   - id: supervisor-1
+  #     name: prof. dr. John Doe
+  #     affiliations:
+  #       - tud
+  #   - id: committee-1
+  #     name: Prof. Dr. C. Examiner
+  #     affiliations:
+  #       - tud
+  #   - id: committee-2
+  #     name: Dr. D. Examiner
+  #     affiliations:
+  #       - tud
 
   affiliations:
     - id: tud

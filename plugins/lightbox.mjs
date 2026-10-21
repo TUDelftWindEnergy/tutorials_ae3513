@@ -2,8 +2,13 @@
 // clickable lightbox gallery via GLightbox (loaded from a CDN at runtime).
 
 let pathMod;
-try { pathMod = await import('node:path'); } catch {}
-const PLUGIN_PATH = new URL(import.meta.url).pathname;
+let PLUGIN_PATH;
+try {
+  pathMod = await import('node:path');
+  const { fileURLToPath } = await import('node:url');
+  // fileURLToPath handles Windows drive letters, unlike URL.pathname
+  PLUGIN_PATH = fileURLToPath(import.meta.url);
+} catch {}
 
 const GLIGHTBOX_VERSION = '3.3.0';
 const GLIGHTBOX_CSS = `https://cdn.jsdelivr.net/npm/glightbox@${GLIGHTBOX_VERSION}/dist/css/glightbox.min.css`;
@@ -55,7 +60,10 @@ const injectWidgetTransform = {
       children: [
         {
           type: 'anywidget',
-          esm: pathMod.relative(pathMod.dirname(file.path), PLUGIN_PATH),
+          esm: pathMod
+            .relative(pathMod.dirname(pathMod.resolve(file.path)), PLUGIN_PATH)
+            .split(pathMod.sep)
+            .join('/'),
           model: {},
           id: crypto.randomUUID(),
         },
