@@ -28,7 +28,7 @@ The tutorials introduce basic tools to use during the course.
 Simulate the wake effects in a wind farm and the resulting power with FLORIS.
 :::
 
-:::{card} Wind Farm Simulation with PyWake
+:::{card} Wind Farm Simulation with PyWake (optional)
 :link: ../notebooks/Tuto_pywake.ipynb
 Simulate the wake effects in a wind farm and the resulting power with PyWake.
 :::

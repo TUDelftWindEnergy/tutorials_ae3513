@@ -8,7 +8,10 @@ The tutorials can be run in two ways:
 You need two things: **pixi**, a small program that installs Python and all the required packages for you, and the **tutorial folder**, which tells pixi exactly what to install. If you already have another Python installation (for example Anaconda), it will not interfere. Use the terminal as described below rather than the Anaconda Prompt.
 
 :::{tip} New to Python?
-You do not need to be a Python expert to follow the tutorials, but you should know the basics (variables, lists, loops, functions). If you have never used Python, work through the free course [Programming with Python](https://swcarpentry.github.io/python-novice-gapminder/) first.
+You do not need to be a Python expert to follow the tutorials, but you should know the basics (variables, lists, loops, functions). If you have never used Python, these tutorials are a good place to start:
+- [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/)
+- [Plotting and Programming in Python](https://swcarpentry.github.io/python-novice-gapminder/).
+- [LearnPython](https://www.learnpython.org/)
 :::
 
 ## Part 1: Installation (once)
@@ -59,7 +62,7 @@ It should print a version number. See the [pixi documentation](https://pixi.sh) 
 
 ### Step 2: Download the notebooks folder
 
-The notebooks are in the [notebooks](https://github.com/tudelftwindenergy/tutorials_ae3513/tree/main/notebooks) folder of the repository. GitHub cannot download a single folder as a ZIP file, so use the [download-directory](https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Ftudelftwindenergy%2Ftutorials_ae3513%2Ftree%2Fmain%2Fnotebooks) tool, which creates a ZIP file of the folder. Unzip it and move the resulting `notebooks` folder somewhere you will keep your work, for example `Documents`.
+The notebooks are in the [notebooks](https://github.com/tudelftwindenergy/tutorials_ae3513/tree/main/notebooks) folder of the repository. GitHub cannot download a single folder as a ZIP file, so use the [download-directory](https://download-directory.github.io/) tool, which creates a ZIP file of the folder. Unzip it and move the resulting `notebooks` folder somewhere you will keep your work, for example `Documents`.
 
 ### Step 3: Install the packages
 Open a terminal from the  `notebooks` folder (the folder that contains `pixi.toml`) and type:
@@ -94,6 +97,8 @@ A notebook is made of **cells**, which contain either text or code.
 - You can edit any code cell and run it again to see the effect of your change.
 - If something goes wrong, use **Kernel → Restart Kernel and Run All Cells** to start again from a clean state.
 
+The following YouTube video gives more information about how these notebooks work: [Jupyter Notebook Complete Beginner Guide 2023 - From Jupyter to Jupyterlab, Google Colab and Kaggle!](https://www.youtube.com/watch?v=5pf0_bpNbkw)
+
 ## Troubleshooting
 
 | Problem                                                   | Solution                                                                                                                                                                                                          |
@@ -106,4 +111,4 @@ A notebook is made of **cells**, which contain either text or code.
 ## Acknowledgements
 
 
-This page is adapted from the [Installing Python](https://www.modelling-energy-systems.org/stable/appendix/installing-python.html) appendix of the TU Delft course *Modelling energy systems* by Stefan Pfenninger and contributors.
+This page is adapted from the [Installing Python](https://www.modelling-energy-systems.org/stable/appendix/installing-python.html) from the TU Delft course *Modelling energy systems* by Stefan Pfenninger and contributors.
